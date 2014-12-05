@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mercuriel_Addtotop>
+            <version>0.1</version>
+        </Mercuriel_Addtotop>
+    </modules>
+    <global>
+        <events>
+            <page_block_html_topmenu_gethtml_before>
+                <observers>
+                    <addtotop_addlink>
+                        <class>mercuriel_addtotop/observer</class>
+                        <method>addItemsToTopmenuItems</method>
+                    </addtotop_addlink>
+                </observers>
+            </page_block_html_topmenu_gethtml_before>
+        </events>
+        <models>
+            <mercuriel_addtotop>
+                <class>Mercuriel_Addtotop_Model</class>
+            </mercuriel_addtotop>
+        </models>
+    </global>
+</config>
